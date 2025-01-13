@@ -25,7 +25,7 @@ app.use(express.static("public"));
 
 app.get("/", (req, res) => {
     console.log("Cliente acessou a página principal.");
-    res.sendFile(__dirname + "chat.html");
+    res.sendFile("chat.html");
 });
 
 io.on("connection", (socket) => {
